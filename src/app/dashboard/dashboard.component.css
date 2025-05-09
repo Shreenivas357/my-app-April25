@@ -6,15 +6,24 @@
 }
 * {
     margin: 0;
-    padding: 0;
 }
 .left{
     width: 20%;
     height: 100%;
-    background-color: darkcyan;
+    background-color: rgb(145, 49, 224);
+    text-align: center;
+    color: rgb(26, 10, 10);
+    
 }
 .right{
     width: 80%;
     height: 100%;
     background-color: burlywood;
+}
+button{
+width: 200px;
+height: 40px;
+color: ;
+font-size: larger;
+background-color: brown;
 }

@@ -1,0 +1,19 @@
+<!-- <p>calculator works!</p> -->
+<div class="parent">
+    <div class="calc">
+        <h1>Rectangle</h1>
+        <label> Length: </label><br><br>
+        <input type="number" [(ngModel)]="length"><br><br>
+        <label> width: </label><br><br>
+        <input type="number" [(ngModel)]="width"><br><br><br>
+
+        
+        <button (click)="area()" [disabled]="(length==0)||(width==0)"> Area </button>
+        <button (click)="perimeter()" [disabled]="(length==0)||(width==0)"> Perimeter </button><br><br>
+        
+      
+        <h2 id="">Result is : {{result}}</h2>
+
+    </div>
+</div>
+

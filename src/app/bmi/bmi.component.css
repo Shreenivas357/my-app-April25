@@ -1,0 +1,43 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://c1.wallpaperflare.com/preview/688/229/270/air-code-coding-html.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.calc{
+    width: 30%;
+    height: 55%;
+    color: rgb(22, 22, 189);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 20px;
+    background-color: rgb(23, 3, 68);
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    width: 250px;
+    height: 30px;
+    color: rgb(17, 1, 17);
+    font-size: medium;
+    border-radius: 10px;
+    background-color: rgb(234, 161, 161);
+    border: none;
+    margin: 5px;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}

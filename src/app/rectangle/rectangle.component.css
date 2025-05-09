@@ -1,0 +1,40 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-psd/abstract-background-design_1297-79.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.calc{
+    width: 25%;
+    height: 65%;
+    color: yellow;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: large;
+    border-radius: 20px;
+    background-color: rgb(11, 3, 84);
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    width: 250px;
+    height: 30px;
+    color: pur;
+    border-radius: 10px;
+    background-color: lightcoral;
+    border: none;
+    margin: 5px;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}

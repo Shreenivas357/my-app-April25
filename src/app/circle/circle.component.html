@@ -1,0 +1,17 @@
+<!-- <p>calculator works!</p> -->
+<div class="parent">
+    <div class="calc">
+        <!-- <h1>Radius</h1> -->
+        <label> Radius: </label><br><br>
+        <input type="number" [(ngModel)]="radius"><br><br><br>
+        <button (click)="area()" [disabled]="(radius==0)||(radius==0)"> Area </button>
+        <button (click)="perimeter()" [disabled]="(radius==0)||(radius==0)"> Perimeter </button><br><br>
+        
+
+
+        <h3>Result is : {{result}}</h3>
+
+    </div>
+</div>
+
+

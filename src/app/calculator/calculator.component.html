@@ -1,0 +1,19 @@
+<!-- <p>calculator works!</p> -->
+<div class="parent">
+    <div class="calc">
+        <h1>Calculator</h1>
+        <label>Num 1 </label>
+        <input type="number" [(ngModel)]="num1"><br><br>
+        <label>Num 2 </label>
+        <input type="number" [(ngModel)]="num2"><br><br>
+        <button (click)="calculate()" [disabled]="(num1==0)||(num2==0)"> Sum </button>
+        <button (click)="minus()"    [disabled]="(num1==0)||(num2==0)"> Sub </button>
+        <button (click)="division()" [disabled]="(num1==0)||(num2==0)"> Div </button>
+        <button (click)="multiply()" [disabled]="(num1==0)||(num2==0)"> Mul </button>
+
+        <h2>Result is :  {{result}} </h2>
+        
+        
+
+    </div>
+</div>

@@ -1,0 +1,46 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-photo/landscape-morning-fog-mountains-with-hot-air-balloons-sunrise_335224-794.jpg?ga=GA1.1.830120657.1745480053&semt=ais_hybrid&w=740);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.calc{
+    width: 25%;
+    height: 40%;
+    color: yellow;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1_fyyb9_ruJMu4ZpDJfiHDzOi70aKEcpb1A&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: whitesmoke;
+}
+button{
+    width: 80px;
+    height: 25px;
+    color: pur;
+    border-radius: 10px;
+    background-color: lightslategrey;
+    border: none;
+    margin: 5px;
+    
+}
+input{
+    width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+}
+label{
+    font-size: large;
+    font-weight: 300;
+}
