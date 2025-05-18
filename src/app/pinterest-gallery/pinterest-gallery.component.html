@@ -1,0 +1,16 @@
+<h3>Pinterest-Gallery</h3>
+
+
+<div class="parent">
+  <div class="card" *ngFor="let data of pinterestgallery">
+     <img src= {{data.download_url}} alt="image" class="img"><br>
+    
+      <div class="download">
+        <a href= {{data.download_url}} class="btn btn-primary">Download</a>
+        <p>{{data.author}}</p><br>
+      </div>
+
+  </div>
+</div> 
+
+

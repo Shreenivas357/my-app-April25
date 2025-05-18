@@ -15,8 +15,21 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { LogoutComponent } from './logout/logout.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployesComponent } from './employes/employes.component';
+import { ProductsComponent } from './products/products.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { MailComponent } from './mail/mail.component';
+import { WeatherComponent } from './weather/weather.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { PinterestGalleryComponent } from './pinterest-gallery/pinterest-gallery.component';
+import { StudentCardComponent } from './student-card/student-card.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { AccountsComponent } from './accounts/accounts.component';
+
 
 @NgModule({
   declarations: [
@@ -33,12 +46,25 @@ import { DirectivesComponent } from './directives/directives.component';
     CircleComponent,
     BmiComponent,
     LogoutComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    EmployesComponent,
+    ProductsComponent,
+    VehiclesComponent,
+    FlipkartComponent,
+    MailComponent,
+    WeatherComponent,
+    CreateVehicleComponent,
+    PinterestGalleryComponent,
+    StudentCardComponent,
+    CreateUserComponent,
+    AccountsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

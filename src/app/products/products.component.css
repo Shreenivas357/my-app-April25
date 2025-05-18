@@ -1,0 +1,54 @@
+.parent{
+    width: 100Vw;
+    display: flex;
+}
+
+h1{
+    text-align: center;
+}
+.leftside{
+    width: 50%;
+    height: 30%;
+}
+.rightside{
+    width: 50%;
+    height: 25%;
+}
+
+.free{
+    background-color: blue;
+    border-radius: 5px;
+    margin-left: 15px;
+    color: white;
+    padding: 5px;
+}
+input{
+    margin-left: 10px;
+    padding: 3px;
+}
+.btn-success{
+    padding: 10px;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+.btn-primary {
+    padding: 10px;
+    margin-left: 15px;
+    /* background-color: orchid; */
+    color: white;
+    border-radius: 5px;
+}
+.btn-secondary{
+    background-color: orchid;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.total{
+    padding: 5px;
+    margin-left: 10px;
+    background-color: rgb(81, 64, 96);
+    border-radius: 5px;
+    color: azure;
+}

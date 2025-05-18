@@ -1,0 +1,24 @@
+.parent{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.weather{
+    width: 50%;
+    height: 70%;
+    background-color: bisque;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.icon{
+    width: 75px;
+    height: 75px;
+    margin-left: 300px;
+    border-radius: 100px;
+    background-color: yellowgreen;
+}

@@ -1,16 +1,29 @@
 <div class="parent">
     <div class="left"><br>
-        <h1>My Website</h1><br><br><hr><br>
-        <h2 routerLink="/dashboard/home">Home</h2><br><br>
-        <h2 routerLink="/dashboard/welcome">Welcome</h2><br><br>
-        <h2 routerLink="/dashboard/databinding">Data Binding</h2><br><br>
-        <h2 routerLink="/dashboard/calculator">Calculator</h2><br><br>
-        <h2 routerLink="/dashboard/rectangle">Rectangle</h2><br><br>
-        <h2 routerLink="/dashboard/circle">Circle</h2><br><br>
-        <h2 routerLink="/dashboard/bmi">BMI</h2><br><br>
-        <h2 routerLink="/dashboard/directives">Directives</h2><br><br><br><hr><br>
-        
-        <button>Logout</button>
+        <h1>My Website</h1><br><hr><br>
+        <h4 routerLink="/dashboard/login">Login</h4><br>
+        <h4 routerLink="/dashboard/home">Home</h4><br>
+        <h4 routerLink="/dashboard/welcome">Welcome</h4><br>
+        <h4 routerLink="/dashboard/databinding">Data Binding</h4><br>
+        <h4 routerLink="/dashboard/calculator">Calculator</h4><br>
+        <h4 routerLink="/dashboard/rectangle">Rectangle</h4><br>
+        <h4 routerLink="/dashboard/circle">Circle</h4><br>
+        <h4 routerLink="/dashboard/bmi">BMI</h4><br>
+        <h4 routerLink="/dashboard/directives">Directives</h4><br>
+        <h4 routerLink="/dashboard/employes">Employees</h4><br>
+        <h4 routerLink="/dashboard/products">Products</h4><br>
+        <h4 routerLink="/dashboard/vehicles">Vehicles</h4><br>
+        <h4 routerLink="/dashboard/flipkart">Flipkart</h4><br>
+        <h4 routerLink="/dashboard/mail">Mails</h4><br>
+        <h4 routerLink="/dashboard/weather">Weather</h4><br>
+        <h4 routerLink="/dashboard/create-vehicle">Create-Vehicle</h4><br>
+        <h4 routerLink="/dashboard/pinterestgallery">Pinterest-Gallery</h4><br>
+        <h4 routerLink="/dashboard/studentcard">Student-Card</h4><br>
+        <h4 routerLink="/dashboard/createuser">Create-User</h4><br>
+        <h4 routerLink="/dashboard/accounts">Accounts</h4><br>
+        <br><hr><br>
+
+        <button (click)="logout()">Logout</button>
     </div>
     <div class="right">
         <router-outlet></router-outlet>

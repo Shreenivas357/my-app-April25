@@ -1,0 +1,62 @@
+<h1>Flipkart</h1><br>
+
+<div class="parent">
+<div class="leftside">
+<input type="text" placeholder="Enter text to search" [(ngModel)]="term" (keyup)="search()">
+<button (click)="onlyfree()" class="free">Only free delivery</button><br><br>
+<button (click)="priceLowtoHigh()" class="btn btn-success">Price Low To High</button>
+<button (click)="priceHightoLow()" class="btn btn-success">Price High To Low</button>
+<button (click)="ratingLowtoHigh()" class="btn btn-success">Rating Low To High</button>
+<button (click)="ratingHightoLow()" class="btn btn-success">Rating High To Low</button><br><br>
+
+<button  (click)="Applydiscount()" class="btn btn-primary">Apply 50% Discount</button>
+<button  (click)="Deliverycharges()" class="btn btn-primary">Price With Delivery Charges</button><br><br>
+
+<button class="btn btn-secondary" (click)="totalprice()">Total Price</button>
+<button class="btn btn-secondary" (click)="totalCartItems()"> Total Cart Items</button><br><br>
+</div>
+
+<div class="rightside">
+
+<label>Name</label>
+<input type="text" [(ngModel)]="productname"><br><br>
+
+
+<label>Price</label>   
+<input type="number" [(ngModel)]="price"><br><br>
+
+
+<label>Rating</label>
+<input type="number" [(ngModel)]="rating"><br><br>
+
+
+<label>Free Delivery</label>
+<input type="radio" [(ngModel)]="freedelivery" name="rad" value="true"> Yes 
+<input type="radio" [(ngModel)]="freedelivery" name="rad" value="false"> No <br><br>
+
+
+<button (click)="add()" class="btn btn-secondary">Add to Cart</button><br>
+</div>
+</div>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>S.no</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Free Delivery</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{product.productname | uppercase}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.rating}}</td>
+            <td>{{product.freedelivery | uppercase}}</td>
+            <td><button class="btn btn-danger" (click)="delete(i)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

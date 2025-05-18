@@ -13,12 +13,15 @@
     background-color: rgb(145, 49, 224);
     text-align: center;
     color: rgb(26, 10, 10);
+    overflow: auto;
     
 }
 .right{
     width: 80%;
     height: 100%;
     background-color: burlywood;
+    overflow: auto;
+    
 }
 button{
 width: 200px;

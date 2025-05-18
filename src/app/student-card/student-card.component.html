@@ -1,0 +1,97 @@
+
+
+<!-- <div class="parent">
+    <div class="card" *ngFor="let data of studentcard">
+        <div class="city">{{data.city}}</div>
+        <div class="dob">{{data.dob}}</div>
+        <div class="email">{{data.email}}</div>
+        <div class="id">{{data.id}}</div>
+        <div class="name">{{data.name}}</div>
+        <div class="phone">{{data.phone}}</div>
+        <div class="profilepicture">{{data.profile_picture}}</div>
+        <div class="schoolcity">{{data.school_city}}</div>
+        <div class="schoollogo">{{data.school_logo}}</div>
+        <div class="schoolname">{{data.school_name}}</div>
+        <div class="schoolpin">{{data.school_pin}}</div>
+
+    </div>
+
+</div> -->
+
+
+      <div class="main">
+        <div class="toolbar">
+
+      <input type="text" placeholder="Search Student" [(ngModel)]="keywords" (keyup)="search()">
+
+    <select [(ngModel)]="column">Column
+      <label>Column</label>
+      <option value="name"> Name</option>
+      <option value="phone">Phone</option>
+      <option value="dob">DOB</option>
+      <option value="city">City</option>
+      <option value="email">Email</option>
+    </select>
+
+    <select [(ngModel)]="order">
+      <option value="asc">Ascending Order</option>
+      <option value="desc">Descending Order</option>
+    </select>
+
+         <button (click)="sort()">Sort</button>
+
+   <select [(ngModel)]="limit">
+     <option value="10">10</option>
+     <option value="20">20</option>
+     <option value="30">30</option>
+     <option value="50">50</option>
+   </select>
+
+    <select [(ngModel)]="page">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+
+          <button (click)="pagination()">Pagination</button>
+          <button class="btn btn-primary" routerLink="/dashboard/create">Create</button>
+
+       </div>
+  </div>
+     
+  
+  
+  <div class="parent">
+      <div class="student-card" *ngFor="let student of studentcard">
+        <div class="card-header">
+          <img src="{{student.school_logo}}" alt="school logo" class="logo">
+          {{ student.school_name }}
+        </div>
+        <div class="card-body">
+          <div class="student-info">
+            <p><b>NAME  : </b> {{ student.name }}</p>
+            <p><b>PHONE : </b> {{ student.phone }}</p>
+            <p><b>DOB   : </b> {{ student.dob }}</p>
+            <p><b>CITY  : </b> {{ student.city }}</p>
+            <p><b>EMAIL : </b> {{ student.email }}</p>
+          </div>
+          <div class="student-image">
+            <img src="{{student.profile_picture}}" alt="studentlogo">
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="details">
+          <span>School City: <b>{{ student.school_city }}</b></span>
+          <span>School Pin: <b>{{ student.school_pin }}</b></span>
+          </div>
+          <div class="btn">
+          <button class="view">View</button>
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
