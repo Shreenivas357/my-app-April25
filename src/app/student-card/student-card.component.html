@@ -55,7 +55,7 @@
     </select>
 
           <button (click)="pagination()">Pagination</button>
-          <button class="btn btn-primary" routerLink="/dashboard/create">Create</button>
+          <button class="btn btn-primary" routerLink="/dashboard/create-student">Create</button>
 
        </div>
   </div>
@@ -86,8 +86,8 @@
           <span>School Pin: <b>{{ student.school_pin }}</b></span>
           </div>
           <div class="btn">
-          <button class="view">View</button>
-          <button class="edit">Edit</button>
+          <button class="view" routerLink="/dashboard/student/{{student.id}}">View</button>
+          <button class="edit" routerLink="/dashboard/student/{{student.id}}">Edit</button>
           <button class="delete">Delete</button>
           </div>
         </div>

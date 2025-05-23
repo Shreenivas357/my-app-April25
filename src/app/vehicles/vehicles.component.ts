@@ -71,6 +71,7 @@ export class VehiclesComponent {
       alert('Internal Server Error!')
     })
   }
+  
 
   delete(id:number){
     if(confirm('Are you sure to delete?')==true) {

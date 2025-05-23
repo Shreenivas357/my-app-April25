@@ -13,7 +13,7 @@ export class DashboardComponent {
   logout(){
     if(confirm('are you sure to logout?')==true){
       sessionStorage.removeItem('token');
-      this._router.navigateByUrl('/');
+      this._router.navigateByUrl('');
     }else{
       alert("Cancelled Logout")
     }

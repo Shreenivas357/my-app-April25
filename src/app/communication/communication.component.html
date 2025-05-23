@@ -1,0 +1,11 @@
+<p>communication works!</p>
+
+
+<app-child [a]="'Srinivas'" (bEvent)="store($event)"></app-child>
+
+<h1>My Name is {{name}}</h1>
+
+<app-child 
+      [role]="'UIDeveloper'"
+      (nameEvent)="display($event)">
+</app-child>

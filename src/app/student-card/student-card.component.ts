@@ -10,7 +10,7 @@ export class StudentCardComponent {
 
   studentcard:any=[];
         constructor(private _studentcardService:StudentCardService){
-          _studentcardService.getstudentcard().subscribe((data:any)=>{
+          _studentcardService.getstudentcard(1).subscribe((data:any)=>{
             console.log(data);
             this.studentcard=data;
             console.log(this.studentcard);
@@ -22,7 +22,7 @@ export class StudentCardComponent {
 
   keywords:any='';
   search(){
-    this._studentcardService.filteredStudentcard(this.keywords).subscribe(
+    this._studentcardService.filteredstudentcard(this.keywords).subscribe(
       (data:any)=>{
         console.log(data);
         this.studentcard=data
@@ -33,7 +33,7 @@ export class StudentCardComponent {
   column:any='';
   order:any='';
   sort(){
-    this._studentcardService.sortedStudentcard(this.column,this.order).subscribe(
+    this._studentcardService.sortedstudentcard(this.column,this.order).subscribe(
       (data:any)=>{
         console.log(data);
         this.studentcard=data
@@ -47,7 +47,7 @@ export class StudentCardComponent {
   limit:number=0;
   page:number=0;
   pagination(){
-    this._studentcardService.paginatedStudentcard(this.limit,this.page)
+    this._studentcardService.paginatedstudentcard(this.limit,this.page)
     .subscribe(
       (data:any)=>{
         console.log(data);

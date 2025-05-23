@@ -7,15 +7,19 @@ import { Observable } from 'rxjs';
 })
 export class StudentCardService {
   
-  filteredStudentcard: any;
-  sortedStudentcard: any;
-  paginatedStudentcard: any;
+
 
    constructor(private _httpClient:HttpClient) {}
       
-        getstudentcard():Observable<any>{
+        getstudentcard(id: any):Observable<any>{
           return this._httpClient.get('https://6128991386a213001729f9df.mockapi.io/test/v1/student')
         }
+        
+
+        getStudentcard(id: any): Observable<any> {
+  return this._httpClient.get('https://6128991386a213001729f9df.mockapi.io/test/v1/student/' + id);
+}
+
 
 
         filteredstudentcard(term:any):Observable<any>{
@@ -30,10 +34,13 @@ export class StudentCardService {
     return this._httpClient.get('https://6128991386a213001729f9df.mockapi.io/test/v1/student?limit='+limit+'&page='+page);
   }
 
+  updateStudentcard(id:any,data:any):Observable<any> {
+    return this._httpClient.put('https://6128991386a213001729f9df.mockapi.io/test/v1/student/'+id,data);
+  }
 
-
-
-
+  createStudentcard(data:any):Observable<any> {
+    return this._httpClient.post('https://6128991386a213001729f9df.mockapi.io/test/v1/student/',data);
+  }
 
 
   }

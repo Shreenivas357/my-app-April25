@@ -14,7 +14,7 @@
     <option value="desc">Descending Order</option>
 </select>
 
-<button (click)="sort()">Sort</button>
+<button (click)="sort()" class="btn btn-success">Sort</button>
 
 <select [(ngModel)]="limit">
     <option value="10">10</option>
@@ -30,7 +30,7 @@
     <option value="4">4</option>
 </select>
 
-<button (click)="pagination()">Pagination</button>
+<button (click)="pagination()"  class="btn btn-success">Pagination</button>
 
 <button class="btn btn-primary" routerLink="/dashboard/create-vehicle">Create-Vehicle</button>
 
@@ -42,13 +42,13 @@
         <th>Color</th>
         <th>Cost</th>
         <th>Fuel</th>
-        <th>Id</th>
+        <!-- <th>Id</th> -->
         <th>Image</th>
-        <th>Manufacturer</th>
+        <!-- <th>Manufacturer</th>
         <th>Model</th>
         <th>Type</th>
-        <th>Tyres</th>
-        <th>Actions</th>
+        <th>Tyres</th> -->
+        <th colspan="2">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -56,17 +56,23 @@
             <td>{{i+1}}</td>
             <td>{{vehicle.Vehicle}}</td>
             <td>{{vehicle.color}}</td>
-            <td>{{vehicle.cost}}</td>
+            <td>{{vehicle.cost | inr}}</td>
             <td>{{vehicle.fuel}}</td>
-            <td>{{vehicle.id}}</td>
-            <td>{{vehicle.image}}</td>
-            <td>{{vehicle.manufacturer}}</td>
+            <!-- <td>{{vehicle.id}}</td> -->
+            <td><img src="{{vehicle.image}}" alt="" width="100px"></td>
+            <!-- <td>{{vehicle.manufacturer}}</td>
             <td>{{vehicle.model}}</td>
             <td>{{vehicle.type}}</td>
-            <td>{{vehicle.tyres}}</td>
-            <td><button class="btn btn-danger" (click)="delete(vehicle.id)">Delete</button></td>
+            <td>{{vehicle.tyres}}</td> -->
+            <td>
+                <button class="btn btn-info" routerLink="/dashboard/vehicle-details/{{vehicle.id}}">
 
-            
+                   <i class="bi bi-eye-fill"></i>
+                    
+                </button>
+                 <button routerLink="/dashboard/edit-vehicle/{{vehicle.id}}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
+            </td>
+            <td><button class="btn btn-danger" (click)="delete(vehicle.id)">Delete</button></td>
         </tr>
 
     </tbody>

@@ -24,12 +24,18 @@ import { StudentCardComponent } from './student-card/student-card.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { AuthenticationGuard } from './authentication.guard';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { StudentComponent } from './student/student.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
+import { CommunicationComponent } from './communication/communication.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { ParentRatingComponent } from './parent-rating/parent-rating.component';
 
 
 const routes: Routes = [
-  {path:'login',component:LoginComponent},
-  {path:'',component:HomeComponent},
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'',component:LoginComponent},
+  // {path:'',component:HomeComponent},
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthenticationGuard],children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:'databinding',component:DatabindingComponent},
@@ -38,9 +44,14 @@ const routes: Routes = [
     {path:'products',component:ProductsComponent},
     {path:'vehicles',component:VehiclesComponent},
     {path:'create-vehicle',component:CreateVehicleComponent},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'flipkart',component:FlipkartComponent},
     {path:'pinterestgallery',component:PinterestGalleryComponent},
     {path:'studentcard',component:StudentCardComponent},
+    {path:'create-student',component:CreateStudentComponent},
+    {path:'student/:id',component:StudentComponent},
+    {path:'edit-student/:id',component:StudentComponent},
     {path:'createuser',component:CreateUserComponent},
     {path:'accounts',component:AccountsComponent},
     {path:'mail',component:MailComponent},
@@ -49,7 +60,9 @@ const routes: Routes = [
     {path:'rectangle',component:RectangleComponent},
     {path:'circle',component:CircleComponent},
     {path:'bmi',component:BmiComponent},
-    {path:'login',component:LoginComponent},
+    {path:'communication',component:CommunicationComponent},
+    {path:'sibling1',component:Sibling1Component},
+    {path:'parentrating',component:ParentRatingComponent},
     {path:'logout',component:LogoutComponent}
     
   ]},

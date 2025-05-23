@@ -1,0 +1,22 @@
+<p>student works!</p>
+
+<form [formGroup]="studentForm">
+    <label>Name:</label>
+    <input type="text" formControlName="name"><br>
+    <label>Phone:</label>
+    <input type="number" formControlName="phone"><br>
+    <label>DOB:</label>
+    <input type="date" formControlName="dob"><br>
+    <label>City:</label>
+    <input type="text" formControlName="city"><br>
+    <label>Email:</label>
+    <input type="text" formControlName="email"><br><br>
+
+    <button class="btn btn-primary">Add Card</button><br><br>
+
+    <button class="btn btn-primary" routerLink="/dashboard/edit-student/{{student.id}}">Edit</button>
+
+
+    <!-- <button class="btn btn-info" (click)="submit()">Submit</button> -->
+
+</form>

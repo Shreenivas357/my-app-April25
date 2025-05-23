@@ -1,7 +1,7 @@
 <div class="parent">
     <div class="left"><br>
         <h1>My Website</h1><br><hr><br>
-        <h4 routerLink="/dashboard/login">Login</h4><br>
+        <!-- <h4 routerLink="login">Login</h4><br> -->
         <h4 routerLink="/dashboard/home">Home</h4><br>
         <h4 routerLink="/dashboard/welcome">Welcome</h4><br>
         <h4 routerLink="/dashboard/databinding">Data Binding</h4><br>
@@ -21,9 +21,11 @@
         <h4 routerLink="/dashboard/studentcard">Student-Card</h4><br>
         <h4 routerLink="/dashboard/createuser">Create-User</h4><br>
         <h4 routerLink="/dashboard/accounts">Accounts</h4><br>
-        <br><hr><br>
+        <h4 routerLink="/dashboard/communication">Communication(P)</h4><br>
+        <h4 routerLink="/dashboard/sibling1">Sibling1</h4><br>
+        <h4 routerLink="/dashboard/parentrating">Parent-Rating</h4><br><br><hr><br>
 
-        <button (click)="logout()">Logout</button>
+        <button (click)="logout()" class="btn btn-danger">Logout</button><br><br>
     </div>
     <div class="right">
         <router-outlet></router-outlet>

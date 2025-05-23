@@ -6,9 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-  _httpClient: any;
 
-  constructor(private_httpClient:HttpClient) { }
+
+  constructor(private _httpClient:HttpClient) {}
 
   userlogin(data:any):Observable<any>{
 
